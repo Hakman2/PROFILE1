@@ -1,0 +1,27 @@
+Issahak Issah
+hakkman2@gmail.com | jakh3172@gmail.com | LinkedIn: https://www.linkedin.com/in/hakman2?trk=contact-info
+Education
+University of Cape Coast
+Bachelor of Education in Information Technology (Ongoing)
+-  Major: Information Technology | Minor: Economics
+Experience
+Frontend Development Intern
+AmaliTech | Takoradi, Ghana
+Aug 2024 - Sept 2024
+-	Developed a responsive contact directory application using HTML, CSS, and JavaScript.
+-	Gained hands-on experience in front-end development and improved proficiency in web design.
+-	Collaborated with peers on debugging and refining code for efficient performance.
+Intern
+Headstarter AI - UCC
+Jan 2025 - Present
+-	Enhancing skills in artificial intelligence, web development, and related technologies.
+-	Working on projects that integrate modern programming concepts with practical solutions.
+Projects
+Interactive Contact Directory
+-	Built a fully functional contact management system using HTML, CSS, and JavaScript.
+-	Implemented features such as adding, deleting, and searching for contacts.
+-	Designed a responsive user interface for seamless use across devices.
+Technical Skills
+-	Programming Languages: HTML, CSS, JavaScript, C ++
+-	Frameworks/Tools: Visual Studio Code, GitHub
+-	Core Competencies: Web development, front-end design, debugging, responsive design
