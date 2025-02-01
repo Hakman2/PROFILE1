@@ -498,8 +498,8 @@ table {
     flex-flow: row wrap;
     width    : min(92%, var(--width-grid-max));
     margin   : 0 auto;
-    background-color: #000000d5;
-    color: white;
+
+   
 }
 
 .row .row {
@@ -3589,6 +3589,11 @@ td:last-child {
 
 .s-intro__scroll-down svg path {
     fill: white;
+}
+
+.opat1{
+    background-color: #3b2b2b9c;
+
 }
 
 .opat{
