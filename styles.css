@@ -3592,7 +3592,9 @@ td:last-child {
 }
 
 .opat1{
-    background-color: #3b2b2b9c;
+    background-color: #3a1c1c60;
+    opacity: 0.5;
+    
 
 }
 
