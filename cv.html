@@ -33,6 +33,12 @@
       display: inline-block;
       padding-bottom: 5px;
     }
+    .tagline {
+      color: #0078d4;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
     .contact-info {
       margin-top: 10px;
       font-size: 0.95em;
@@ -61,6 +67,35 @@
       font-weight: bold;
       margin-top: 10px;
     }
+    .badge {
+      display: inline-block;
+      background: #0078d4;
+      color: #fff;
+      font-size: 0.75em;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .pill {
+      display: inline-block;
+      background: #e8f1fb;
+      color: #0078d4;
+      font-size: 0.85em;
+      padding: 4px 12px;
+      border-radius: 14px;
+      margin: 4px 4px 0 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #0078d4;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
     @media (max-width: 600px) {
       .container {
         width: 95%;
@@ -74,80 +109,103 @@
 </head>
 <body>
   <div class="container">
+    <a class="back-link" href="index.html">&larr; Back to Home</a>
+
     <h1>Issahak Issah</h1>
+    <div class="tagline">FRONT-END DEVELOPER | ASPIRING DATA ENGINEER</div>
+
     <div class="contact-info">
-      <p>📧 <a href="mailto:issahakissah70@gmail.com">issahakissah70@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/issahakissah" target="_blank">linkedin.com/in/issahakissah</a></p>
+      <p>
+        📧 <a href="mailto:hakkman@gmail.com">hakkman@gmail.com</a> |
+        📧 <a href="mailto:issahissahak70@gmail.com">issahissahak70@gmail.com</a><br>
+        📱 <a href="tel:+233203557663">+233 203 557 663</a> |
+        📱 <a href="tel:+233256461682">+233 256 461 682</a><br>
+        🌐 <a href="https://hakman2.github.io/PROFILE1" target="_blank">hakman2.github.io/PROFILE1</a> |
+        🔗 <a href="https://www.linkedin.com/in/issahakissah" target="_blank">linkedin.com/in/issahakissah</a>
+      </p>
     </div>
 
     <div class="section">
       <h2>Profile</h2>
-      <p>Motivated Web Developer and IT Specialist with experience in front-end development, cloud computing (AWS), and cybersecurity basics. Skilled in building responsive applications using HTML, CSS, and JavaScript, and familiar with Python. Strong background in IT support and digital marketing, with excellent communication and problem-solving skills.</p>
+      <p>Motivated IT student and ICT/CS educator with hands-on experience in front-end development, data
+        analysis, and a strong interest in cybersecurity. Skilled in building web applications and analyzing
+        complex datasets. Seeking opportunities to grow as a Data Engineer.</p>
     </div>
 
     <div class="section">
       <h2>Skills</h2>
       <ul>
-        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React (basic)</li>
-        <li><strong>IT & Networking:</strong> Troubleshooting, System Support, Network Administration</li>
-        <li><strong>Other Tools:</strong> Git/GitHub, VS Code, Digital Marketing, Analytics</li>
-        <li><strong>Soft Skills:</strong> Problem-solving, Teamwork, Communication</li>
+        <li><strong>Front-end Development:</strong> HTML, CSS, JS, React, Tailwind, Python</li>
+        <li><strong>Data Analysis:</strong> Python, SQL, Supabase</li>
+        <li><strong>Other:</strong> Linux Basics, Problem-Solving, Project Management & Teaching</li>
+        <li><strong>Microsoft Office Suite:</strong> Word, PowerPoint, Excel</li>
       </ul>
+      <div>
+        <span class="pill">Python</span>
+        <span class="pill">React</span>
+        <span class="pill">Tailwind</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Supabase</span>
+      </div>
     </div>
 
     <div class="section">
       <h2>Experience</h2>
 
-      <h3>Frontend & Backend Intern – AmaliTech Training Program</h3>
-      <p><em>Aug 2024 – Oct 2024</em></p>
+      <h3>Front-end Development Intern <span class="badge">1 Month</span></h3>
+      <p class="subheading">Amalitech</p>
       <ul>
-        <li>Built and tested responsive web applications.</li>
-        <li>Developed an interactive contact management system and a secure voting system with user/admin dashboards.</li>
-        <li>Collaborated in team-based software projects.</li>
+        <li>Gained practical experience in HTML, CSS, and JavaScript.</li>
+        <li>Collaborated on real-world web projects with development teams.</li>
       </ul>
 
-      <h3>Tech Bootcamp Participant – Global Code Summer Program ’25</h3>
-      <p><em>Aug 2025 – Present</em></p>
+      <h3>ICT / Computer Science Teacher <span class="badge">Current</span></h3>
+      <p class="subheading">Education Sector</p>
       <ul>
-        <li>Worked with Raspberry Pi, Python, GPIO, and Git/GitHub.</li>
-        <li>Applied coding knowledge to hardware/software integration projects.</li>
-      </ul>
-
-      <h3>AWS Cloud Labs (Self-Learning Projects)</h3>
-      <p><em>2025</em></p>
-      <ul>
-        <li>Built a VPC with 15,000 private IPs and 50+ public IPs.</li>
-        <li>Conducted network hardening using Amazon Inspector & AWS Systems Manager.</li>
-      </ul>
-
-      <h3>IT & Digital Marketing Specialist – Freelance</h3>
-      <p><em>2022 – Present</em></p>
-      <ul>
-        <li>Managed IT systems, networks, and troubleshooting.</li>
-        <li>Planned and executed digital marketing strategies for small businesses.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>B.Sc. Information Technology</strong> – University of Cape Coast, Ghana</p>
-    </div>
-
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Google Certified: Digital Marketing</li>
-        <li>Network Administration</li>
-        <li>Microsoft Office Specialist (Word, PowerPoint)</li>
-        <li>AWS Cloud Fundamentals (Labs/Projects)</li>
+        <li>Teaching ICT and Computer Science fundamentals to students.</li>
+        <li>Developing curriculum and hands-on coding exercises.</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Projects</h2>
+
+      <h3>Campus_Poll Team2</h3>
+      <p class="subheading">Team Project &mdash; Frontend</p>
       <ul>
-        <li><strong>Voting System (Web App):</strong> Authentication, dashboards, real-time results.</li>
-        <li><strong>Contact Manager:</strong> Search, add/delete, responsive design.</li>
-        <li><strong>Python Mini Projects:</strong> Palindrome checker, day-to-week converter.</li>
+        <li>Collaborated in a team to build the frontend of a campus polling web application using HTML, CSS, and JavaScript.</li>
+      </ul>
+
+      <h3>GMSA Website</h3>
+      <p class="subheading">Full-Stack &mdash; React, Supabase</p>
+      <ul>
+        <li>Built a multi-page site (Vote, Trade, Gallery).</li>
+        <li>Redesigned with Lovable AI and integrated a Supabase backend.</li>
+      </ul>
+
+      <h3>NOAA Weather Data Analysis <span class="badge">Advanced</span></h3>
+      <p class="subheading">Data Analysis &mdash; Python, SQL</p>
+      <ul>
+        <li>Analyzed the GSOD dataset with thousands of weather stations and decades of observations.</li>
+        <li>Applied time series analysis, anomaly detection, and pattern recognition across global locations and seasons.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>University of Cape Coast</strong> &mdash; Bachelor's in Information Technology</p>
+      <p><strong>Univ. Practice SHS</strong> &mdash; Secondary Education</p>
+      <p><strong>T.I. Ahmediyyah / Garden of Ahmed</strong> &mdash; Primary Education</p>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft PowerPoint</li>
+        <li>Microsoft Word</li>
+        <li>VEX IQ Robotics</li>
+        <li>VEX AIM</li>
       </ul>
     </div>
   </div>
