@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Issahak Issah</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="stylesheet" href="vendor.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        .gallery-page {
+            padding: 140px 0 80px;
+        }
+        .gallery-category {
+            margin-bottom: 60px;
+        }
+        .gallery-category h3 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
+            color: #fff;
+            padding: 30px 12px 10px;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="page" class="s-pagewrap">
+
+        <header class="s-header">
+            <div class="row s-header__inner">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                           <img src="android-chrome-512x512.png" alt="Hakkman.png">
+                        </a>
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div>
+
+                <nav class="s-header__nav">
+                    <ul class="s-header__menu-links">
+                        <li><a href="index.html#intro">Intro</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li class="current"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="gallery-page row">
+            <div class="column lg-12">
+
+                <div class="section-header" data-num="02">
+                    <h2 class="text-display-title">Gallery.</h2>
+                </div>
+
+                <p class="attention-getter">
+                    A look at my project work, teaching, and certifications.
+                </p>
+
+                <div class="gallery-category">
+                    <h3>Projects</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/project-campuspoll-1.jpg" alt="Campus Poll dashboard home">
+                            <div class="gallery-caption">Campus Poll &mdash; landing dashboard</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/project-campuspoll-2.png" alt="Campus Poll how it works section">
+                            <div class="gallery-caption">Campus Poll &mdash; how it works & features</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/project-smarthome.jpg" alt="Smart Home Dashboard project">
+                            <div class="gallery-caption">Smart Home Dashboard &mdash; IoT control panel</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/project-raspberrypi.jpg" alt="Raspberry Pi GPIO project with LEDs">
+                            <div class="gallery-caption">Raspberry Pi & GPIO Zero &mdash; hardware/software integration</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/project-presenting-code.jpg" alt="Presenting a code project on screen">
+                            <div class="gallery-caption">Presenting a Flask portfolio project</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-category">
+                    <h3>Teaching</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/teaching-presenting.jpg" alt="Teaching coding with laptop and projector">
+                            <div class="gallery-caption">Live coding demo in class</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/teaching-classroom.jpg" alt="Teaching a Python lesson on functions">
+                            <div class="gallery-caption">Teaching Python functions and modules</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/profile-laptop.jpg" alt="Working with laptop, GMSA media t-shirt">
+                            <div class="gallery-caption">GMSA-UC IT & Media team</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-category">
+                    <h3>Certificates & Achievements</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/cert-globalcode.jpg" alt="GlobalCode certificate of completion">
+                            <div class="gallery-caption">Global Code 2025 &mdash; Certificate of Completion</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/teaching-cohort.jpg" alt="Global Code cohort group photo">
+                            <div class="gallery-caption">Global Code 2025 cohort, University of Cape Coast</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/profile-portrait.jpg" alt="Portrait of Issahak Issah">
+                            <div class="gallery-caption">Issahak Issah</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</body>
+</html>
