@@ -5,105 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Issahak Issah - CV</title>
   <style>
+    *, *::before, *::after { box-sizing: border-box; }
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f2f5;
       color: #333;
     }
     .container {
-      width: 85%;
-      max-width: 900px;
-      margin: 30px auto;
+      width: 88%;
+      max-width: 960px;
+      margin: 36px auto;
       background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-    h1, h2, h3 {
-      color: #1e1e1e;
-      margin-top: 0;
+      padding: 40px 44px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      border-radius: 12px;
     }
     h1 {
-      font-size: 2em;
-      color: #0078d4;
-      border-bottom: 3px solid #0078d4;
-      display: inline-block;
-      padding-bottom: 5px;
+      font-size: 2.2em;
+      color: #1a1a2e;
+      margin: 0 0 4px;
     }
     .tagline {
-      color: #0078d4;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-top: 8px;
+      color: #00897b;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      font-size: 0.92em;
+      margin-bottom: 16px;
     }
     .contact-info {
-      margin-top: 10px;
-      font-size: 0.95em;
+      font-size: 0.93em;
+      margin-bottom: 4px;
     }
-    .contact-info a {
-      color: #0078d4;
-      text-decoration: none;
+    .contact-info a { color: #00897b; text-decoration: none; }
+    .contact-info a:hover { text-decoration: underline; }
+
+    h2 {
+      font-size: 1.05em;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #00897b;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+      margin: 32px 0 14px;
     }
-    .section {
-      margin-top: 25px;
+    h3 { font-size: 1.05em; margin: 0 0 2px; color: #1a1a2e; }
+    .role { color: #00897b; font-size: 0.9em; font-weight: 600; margin: 0 0 4px; }
+    .card {
+      border: 1px solid #e8ecef;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
     }
-    .section h2 {
-      font-size: 1.3em;
-      border-bottom: 2px solid #333;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 6px;
-    }
-    .subheading {
-      font-weight: bold;
-      margin-top: 10px;
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .badge {
-      display: inline-block;
-      background: #0078d4;
+      background: #00897b;
       color: #fff;
-      font-size: 0.75em;
-      padding: 2px 10px;
+      font-size: 0.73em;
+      padding: 3px 10px;
       border-radius: 12px;
-      margin-left: 8px;
-      vertical-align: middle;
+      white-space: nowrap;
     }
+    .badge.orange { background: #f57c00; }
+    .badge.blue   { background: #1565c0; }
+    .badge.teal   { background: #00838f; }
+    .badge.intern { background: #6a1b9a; }
+    .tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 4px; }
+    .tag {
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 0.78em;
+      padding: 2px 10px;
+      border-radius: 10px;
+    }
+    .github-link { font-size: 0.83em; color: #00897b; text-decoration: none; }
+    .github-link:hover { text-decoration: underline; }
+    p { margin: 4px 0 8px; font-size: 0.93em; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
     .pill {
-      display: inline-block;
-      background: #e8f1fb;
-      color: #0078d4;
-      font-size: 0.85em;
-      padding: 4px 12px;
+      background: #1a1a2e;
+      color: #fff;
+      font-size: 0.82em;
+      padding: 5px 14px;
       border-radius: 14px;
-      margin: 4px 4px 0 0;
     }
+
+    .stat-row { display: flex; gap: 32px; flex-wrap: wrap; margin: 10px 0; }
+    .stat { text-align: center; }
+    .stat .num { font-size: 2.2em; font-weight: 800; color: #00897b; }
+    .stat .label { font-size: 0.82em; color: #555; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
     .back-link {
       display: inline-block;
       margin-bottom: 20px;
-      color: #0078d4;
+      color: #00897b;
       text-decoration: none;
       font-size: 0.9em;
     }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .container {
-        width: 95%;
-        padding: 20px;
-      }
-      h1 {
-        font-size: 1.5em;
-      }
+    .back-link:hover { text-decoration: underline; }
+
+    ul { list-style: none; padding: 0; margin: 6px 0; }
+    ul li { margin-bottom: 5px; font-size: 0.93em; padding-left: 12px; position: relative; }
+    ul li::before { content: "•"; position: absolute; left: 0; color: #00897b; }
+
+    @media (max-width: 620px) {
+      .container { width: 96%; padding: 22px 18px; }
+      .two-col { grid-template-columns: 1fr; }
+      h1 { font-size: 1.6em; }
     }
   </style>
 </head>
@@ -115,99 +139,185 @@
     <div class="tagline">FRONT-END DEVELOPER | ASPIRING DATA ENGINEER</div>
 
     <div class="contact-info">
-      <p>
-        📧 <a href="mailto:issahissahak70@gmail.com">issahissahak70@gmail.com</a> |
-        📧 <a href="mailto:issahak.issahx@gmail.com">issahak.issahx@gmail.com</a><br>
-        📱 <a href="tel:+233203557663">+233 203 557 663</a> |
-        📱 <a href="tel:+233256461682">+233 256 461 682</a><br>
-        🌐 <a href="https://hakman2.github.io/PROFILE1" target="_blank">hakman2.github.io/PROFILE1</a> |
-        🔗 <a href="https://www.linkedin.com/in/issahakissah" target="_blank">linkedin.com/in/issahakissah</a>
-      </p>
+      📧 <a href="mailto:issahissahak70@gmail.com">issahissahak70@gmail.com</a> &nbsp;|&nbsp;
+      📧 <a href="mailto:issahak.issahx@gmail.com">issahak.issahx@gmail.com</a><br>
+      📱 <a href="tel:+233203557663">+233 203 557 663</a> &nbsp;|&nbsp;
+      📱 <a href="tel:+233256461682">+233 256 461 682</a><br>
+      🌐 <a href="https://hakman2.github.io/PROFILE1" target="_blank">hakman2.github.io/PROFILE1</a> &nbsp;|&nbsp;
+      🔗 <a href="https://www.linkedin.com/in/issahakissah" target="_blank">linkedin.com/in/issahakissah</a>
     </div>
 
-    <div class="section">
-      <h2>Profile</h2>
-      <p>Motivated IT student and ICT/CS educator with hands-on experience in front-end development, data
-        analysis, and a strong interest in cybersecurity. Skilled in building web applications and analyzing
-        complex datasets. Seeking opportunities to grow as a Data Engineer.</p>
+    <!-- PROFILE -->
+    <h2>Profile</h2>
+    <p>Motivated IT student and ICT/CS educator with hands-on experience in front-end development, data analysis, and a strong interest in cybersecurity. Skilled in building web applications and analyzing complex datasets. Seeking opportunities to grow as a Data Engineer.</p>
+
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Front-end Development:</strong> HTML, CSS, JS, React, Tailwind, Python</li>
+      <li><strong>Data Analysis:</strong> Python, SQL, BigQuery, Supabase, Plotly, Looker Studio</li>
+      <li><strong>Other:</strong> Linux Basics, Problem-Solving, Project Management &amp; Teaching</li>
+      <li><strong>Microsoft Office Suite:</strong> Word, PowerPoint, Excel</li>
+    </ul>
+    <div class="skill-pills">
+      <span class="pill">Python</span>
+      <span class="pill">React</span>
+      <span class="pill">Tailwind</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">SQL</span>
+      <span class="pill">BigQuery</span>
+      <span class="pill">Supabase</span>
+      <span class="pill">Plotly Dash</span>
     </div>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Front-end Development:</strong> HTML, CSS, JS, React, Tailwind, Python</li>
-        <li><strong>Data Analysis:</strong> Python, SQL, Supabase</li>
-        <li><strong>Other:</strong> Linux Basics, Problem-Solving, Project Management & Teaching</li>
-        <li><strong>Microsoft Office Suite:</strong> Word, PowerPoint, Excel</li>
-      </ul>
-      <div>
-        <span class="pill">Python</span>
-        <span class="pill">React</span>
-        <span class="pill">Tailwind</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">SQL</span>
-        <span class="pill">Supabase</span>
+    <!-- EXPERIENCE -->
+    <h2>Experience</h2>
+    <div class="card">
+      <div class="card-header">
+        <h3>Front-end Development Intern</h3>
+        <span class="badge">1 Month</span>
       </div>
-    </div>
-
-    <div class="section">
-      <h2>Experience</h2>
-
-      <h3>Front-end Development Intern <span class="badge">1 Month</span></h3>
-      <p class="subheading">Amalitech</p>
+      <p class="role">Amalitech</p>
       <ul>
         <li>Gained practical experience in HTML, CSS, and JavaScript.</li>
         <li>Collaborated on real-world web projects with development teams.</li>
       </ul>
-
-      <h3>ICT / Computer Science Teacher <span class="badge">Current</span></h3>
-      <p class="subheading">Education Sector</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>ICT / Computer Science Teacher</h3>
+        <span class="badge">Current</span>
+      </div>
+      <p class="role">Education Sector</p>
       <ul>
         <li>Teaching ICT and Computer Science fundamentals to students.</li>
         <li>Developing curriculum and hands-on coding exercises.</li>
       </ul>
     </div>
 
-    <div class="section">
-      <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
 
-      <h3>Campus_Poll Team2</h3>
-      <p class="subheading">Team Project &mdash; Frontend</p>
-      <ul>
-        <li>Collaborated in a team to build the frontend of a campus polling web application using HTML, CSS, and JavaScript.</li>
-      </ul>
-
-      <h3>GMSA Website</h3>
-      <p class="subheading">Full-Stack &mdash; React, Supabase</p>
-      <ul>
-        <li>Built a multi-page site (Vote, Trade, Gallery).</li>
-        <li>Redesigned with Lovable AI and integrated a Supabase backend.</li>
-      </ul>
-
-      <h3>NOAA Weather Data Analysis <span class="badge">Advanced</span></h3>
-      <p class="subheading">Data Analysis &mdash; Python, SQL</p>
-      <ul>
-        <li>Analyzed the GSOD dataset with thousands of weather stations and decades of observations.</li>
-        <li>Applied time series analysis, anomaly detection, and pattern recognition across global locations and seasons.</li>
-      </ul>
+    <div class="card">
+      <div class="card-header">
+        <h3>Global Disease Surveillance</h3>
+        <div class="tags">
+          <span class="tag">BigQuery</span>
+          <span class="tag">Python</span>
+          <span class="tag">Plotly Dash</span>
+        </div>
+      </div>
+      <p>World Bank Health dataset · 6 indicators · 100+ countries (2000–2022). 9 SQL queries with LAG(), FIRST_VALUE(), pivot reshaping. Python EDA notebook and Plotly Dash dashboard with custom Burden Reversal Score.</p>
+      <a class="github-link" href="https://github.com/Hakman2/Global-Disease-Surveillance" target="_blank">⇗ github.com/Hakman2/Global-Disease-Surveillance</a>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>University of Cape Coast</strong> &mdash; Bachelor's in Information Technology</p>
-      <p><strong>Univ. Practice SHS</strong> &mdash; Secondary Education</p>
-      <p><strong>T.I. Ahmediyyah / Garden of Ahmed</strong> &mdash; Primary Education</p>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header">
+          <h3>Energy &amp; Weather</h3>
+          <div class="tags">
+            <span class="tag">BigQuery</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </div>
+        <p>NOAA GSOD · 10 years · 5 climate zones. SQL with LAG(), rolling 30-day averages. Z-score anomaly detection (&gt;2 SD). Plotly Dash dashboard.</p>
+        <a class="github-link" href="https://github.com/Hakman2/NOOA" target="_blank">⇗ github.com/Hakman2/NOOA</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Air Quality &amp; Pollution</h3>
+          <div class="tags">
+            <span class="tag">BigQuery</span>
+            <span class="tag">Looker</span>
+            <span class="badge intern" style="font-size:0.72em;">Internship</span>
+          </div>
+        </div>
+        <p>OpenAQ PM2.5/NO2 · India, Germany, Nigeria. CTEs, LAG(), rolling 7-day avg. 2-SD anomaly detection. Looker Studio dashboard.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Microsoft PowerPoint</li>
-        <li>Microsoft Word</li>
-        <li>VEX IQ Robotics</li>
-        <li>VEX AIM</li>
-      </ul>
+    <h3 style="margin:16px 0 10px;font-size:0.85em;text-align:center;color:#888;letter-spacing:1px;text-transform:uppercase;">Other Projects</h3>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Campus_Poll</h3>
+        <p class="role">Team Project · Frontend</p>
+        <p>Built frontend of a campus polling web app using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>GMSA Website</h3>
+        <p class="role">React · Supabase</p>
+        <p>Multi-page site with Vote, Trade, Gallery. Integrated Supabase backend.</p>
+      </div>
+      <div class="card">
+        <h3>NOAA Weather</h3>
+        <p class="role">Python · SQL</p>
+        <p>Time series analysis, anomaly detection across global weather stations.</p>
+      </div>
     </div>
+
+    <!-- VOLUNTEERING -->
+    <h2>Volunteering &amp; Community Leadership</h2>
+
+    <div class="stat-row">
+      <div class="stat"><div class="num">1040+</div><div class="label">Students reached at Binance event</div></div>
+      <div class="stat"><div class="num">200+</div><div class="label">Students supported at GMSA-UCC</div></div>
+      <div class="stat"><div class="num">3</div><div class="label">Leadership &amp; volunteer roles</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Blockchain &amp; Web3 Community Outreach</h3>
+        <span class="badge teal">1040+ Students</span>
+      </div>
+      <p class="role">Team Lead &amp; Organizer · Binance Campus Event</p>
+      <p>Mobilized my team to gather over 1,040 students to Binance to learn and explore Blockchain, Web3, Cryptocurrency, and other trending technologies — coordinating logistics, outreach, and on-site engagement.</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>GMSA-UCC</h3>
+        <span class="badge teal">200+ Students</span>
+      </div>
+      <p class="role">IT &amp; Media Personnel</p>
+      <p>Handled IT and media operations for the association, managing digital content and technical support for over 200 students.</p>
+    </div>
+    <div class="card">
+      <h3>AmaliTech-Club UCC</h3>
+      <p class="role">Front-end Developer Team Lead</p>
+      <p>Led a team of front-end developers on club projects, guiding implementation, code quality, and collaborative delivery.</p>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <div class="card">
+      <div class="card-header">
+        <h3>University of Cape Coast</h3>
+        <span style="font-size:0.88em;color:#888;">2021 – Present</span>
+      </div>
+      <p class="role">Bachelor of Science in Information Technology</p>
+      <p style="color:#555;font-size:0.85em;">Coursework: Database Systems, Web Development, Data Structures, Computer Networks, Software Engineering</p>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h3>Univ. Practice SHS</h3>
+        <p class="role">Secondary Education</p>
+        <p style="color:#777;font-size:0.85em;">Cape Coast</p>
+      </div>
+      <div class="card">
+        <h3>T.I. Ahmediyyah</h3>
+        <p class="role">Primary Education</p>
+        <p style="color:#777;font-size:0.85em;">Tamale</p>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft PowerPoint</li>
+      <li>Microsoft Word</li>
+      <li>VEX IQ Robotics</li>
+      <li>VEX AIM</li>
+    </ul>
+
   </div>
 </body>
 </html>
